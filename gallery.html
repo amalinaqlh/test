@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gallery | My Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stylen.css">
+<link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+</head>
+
+<body class="gallery">
+
+<header class="navbar">
+  <div class="logo">Aqilah</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="biodata.html">Biodata</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="family.html">Family</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <input type="text" id="searchInput" placeholder="Search page">
+</header>
+
+<section class="content">
+<h2 class="frijole-title">Gallery</h2>
+
+<!-- Slideshow -->
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="Image/gambar 1.jpeg" style="width:100%">
+    <div class="text">CLASSMATE KCDIM1105B</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="Image/gambar 4.jpeg" style="width:100%">
+    <div class="text">INTERNSHIP AT LADA</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="Image/gambar 5.jpeg" style="width:100%">
+    <div class="text">FAVOURITE CAT</div>
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<div class="choose-title">Choose picture you want to see</div>
+<div class="gallery-grid category-only">
+  <div class="border-frame">
+    <div class="gallery-card" onclick="showGallery('cat')">
+      <img src="Image/comot.jpeg" alt="Cat">
+      <div class="overlay"><span>🐱 Cat</span></div>
+    </div>
+    <div class="gallery-card" onclick="showGallery('friends')">
+      <img src="Image/gambar 3.jpeg" alt="Friends">
+      <div class="overlay"><span>👯 Friends</span></div>
+    </div>
+    <div class="gallery-card" onclick="showGallery('myself')">
+      <img src="Image/lala.jpg" alt="Myself">
+      <div class="overlay"><span>👩 Myself</span></div>
+    </div>
+    <div class="gallery-card" onclick="showGallery('internship')">
+      <img src="Image/LADA.webp" alt="Internship">
+      <div class="overlay"><span>🏢 Internship</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="video-section">
+  <h3 class="video-title">🎥 Video</h3>
+
+  <div class="video-row">
+    <div class="video-box">
+      <video controls>
+        <source src="Video/video1.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="video-box">
+      <video controls>
+        <source src="Video/video2.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="video-box">
+      <video controls>
+        <source src="Video/video3.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</div>
+
+<div id="gallery-section">
+  <div class="big-gallery cat" style="display:none;">
+    <h3>🐱 Cat</h3>
+    <div class="product-grid">
+      <img src="Image/comot.jpeg">
+      <img src="Image/batbat.jpeg">
+      <img src="Image/gemok.jpeg">
+      <img src="Image/meow.jpeg">
+    </div>
+    <div class="back-btn" onclick="backToMain()">← Back</div>
+  </div>
+
+</div>
+
+  <div class="big-gallery friends">
+    <h3>👯 Friends</h3>
+    <div class="product-grid">
+      <img src="Image/gambar 3.jpeg">
+      <img src="Image/gambar 2.jpeg">
+      <img src="Image/gambar 1.jpeg">
+      <img src="Image/smk.jpg">
+    </div>
+    <div class="back-btn" onclick="backToMain()">← Back</div>
+  </div>
+
+  <div class="big-gallery myself">
+    <h3>👩 Myself</h3>
+    <div class="product-grid">
+      <img src="Image/lala.jpg">
+      <img src="Image/work.jpeg">
+      <img src="Image/pantai.jpeg">
+      <img src="Image/mirror.jpeg">
+    </div>
+    <div class="back-btn" onclick="backToMain()">← Back</div>
+  </div>
+
+  <div class="big-gallery internship">
+    <h3>🏢 Internship</h3>
+    <div class="product-grid">
+      <img src="Image/end.jpeg">
+      <img src="Image/in.jpeg">
+      <img src="Image/ter.jpeg">
+      <img src="Image/n.jpeg">
+    </div>
+    <div class="back-btn" onclick="backToMain()">← Back</div>
+  </div>
+</div>
+
+</section>
+
+<footer>
+<p>© 2025 Aqilah | Academic Purpose</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="slideshow.js"></script>
+</body>
+</html>

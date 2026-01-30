@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Online Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="stylen.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Meddon&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body class="home"> 
+
+<div id="bg-bunga"></div>
+
+<header class="navbar">
+  <div class="logo">Aqilah</div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="biodata.html">Biodata</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="family.html">Family</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <input type="text" id="searchInput" placeholder="Search">
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1 class="welcome meddon-regular">Welcome to My Online</h1>
+    <h2 class="saira-stencil-one-regular">Portfolio</h2>
+
+<p class="hero-para">
+    I'm Nur Amalina Aqilah, a student from Universiti Teknologi Mara (UiTM) Kedah 
+    majoring in Diploma Information Management. This online portfolio highlights 
+    my background, experience, education and creative journey. You can click the 
+    button below to view my resume ;)
+  </p>
+
+    <a href="Image/RESUME.pdf" class="btn">View My Resume</a>
+  </div>
+
+  <div class="hero-image">
+    <div class="image-overlay"></div>
+    <img src="Image/aqilah.png" alt="aqilah">
+  </div>
+</section>
+
+<div id="bear" class="bear-bottom-right">
+  <div class="eye" id="leftEye"><div class="pupil"></div></div>
+  <div class="eye" id="rightEye"><div class="pupil"></div></div>
+  <div class="cheek" id="leftCheek"></div>
+  <div class="cheek" id="rightCheek"></div>
+</div>
+
+<button id="toggleBunga">CLICK ME</button>
+<<audio id="clickSound" src="Sound/click.wav" preload="auto"></audio>
+
+<footer>
+  <p>© 2025 aqilah | Personal Website | Academic Purpose</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
